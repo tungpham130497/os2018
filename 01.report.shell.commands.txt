@@ -1,0 +1,66 @@
+echo hello world
+hello world
+
+passwd
+Changing password for tung.
+(current) UNIX password: 
+
+date
+Sat Jan 13 19:33:49 ICT 2018
+
+hostname
+tung-SVF1421DSGB
+
+arch
+x86_64
+
+uname -a
+Linux tung-SVF1421DSGB 4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+dmesg
+[   13.552220] audit: type=1400 audit(1515846434.873:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=550 comm="apparmor_parser"
+[   13.553974] audit: type=1400 audit(1515846434.873:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ippusbxd" pid=552 comm="apparmor_parser"
+[   13.758773] wl 0000:07:00.0 wlp7s0: renamed from wlan0
+[   15.158630] Adding 4072444k swap on /dev/sda6.  Priority:-1 extents:1 across:4072444k FS
+[   19.253472] IPv6: ADDRCONF(NETDEV_UP): wlp7s0: link is not ready
+[   19.259170] IPv6: ADDRCONF(NETDEV_UP): enp14s0: link is not ready
+[   19.356471] r8169 0000:0e:00.0 enp14s0: link down
+[   19.356546] IPv6: ADDRCONF(NETDEV_UP): enp14s0: link is not ready
+
+uptime
+ 19:36:44 up 9 min,  1 user,  load average: 0.14, 0.52, 0.35
+
+who am i
+
+whoami
+tung
+
+who
+tung     tty7         2018-01-13 19:33 (:0)
+
+id
+uid=1000(tung) gid=1000(tung) groups=1000(tung),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+
+last
+tung     tty7         :0               Sat Jan 13 19:33    gone - no logout
+tung     tty7         :0               Sat Jan 13 19:29 - 19:33  (00:03)
+reboot   system boot  4.10.0-28-generi Sat Jan 13 19:27   still running
+tung     tty7         :0               Sat Jan 13 17:23 - down   (00:19)
+reboot   system boot  4.10.0-28-generi Sat Jan 13 17:23 - 17:43  (00:20)
+reboot   system boot  4.10.0-28-generi Sat Jan 13 13:24 - 17:43  (04:19)
+tung     tty7         :0               Sun Jan 14 02:43 - down   (-13:-28)
+reboot   system boot  4.10.0-28-generi Sun Jan 14 02:41 - 13:14  (-13:-26)
+
+wtmp begins Sun Jan 14 02:41:26 2018
+
+finger
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+tung      Tung       tty7       12  Jan 13 19:33 (:0)
+
+ w
+ 19:39:33 up 12 min,  1 user,  load average: 0.18, 0.35, 0.30
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+tung     tty7     :0               19:33   12:19  13.29s  0.22s /sbin/upstart -
+
+
+
