@@ -1,0 +1,31 @@
+ps -A
+5909 ?        00:00:00 kworker/0:1
+ 5959 ?        00:00:00 kworker/1:0
+ 5965 ?        00:00:00 kworker/2:0
+ 6029 ?        00:00:05 aptd
+ 6089 ?        00:00:00 kworker/3:2
+ 6091 ?        00:00:00 gedit
+ 6102 ?        00:00:00 kworker/1:2
+ 6113 ?        00:00:00 gnome-terminal-
+ 6120 pts/4    00:00:00 bash
+ 6132 pts/4    00:00:00 ps
+
+ps -A | grep gnome-cal
+ 6141 ?        00:00:00 gnome-calculato
+
+cat /proc/6141/status
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	381
+nonvoluntary_ctxt_switches:	139
+
+kill -STOP 6141
+
+kill -CONT 6141
+
+kill -KILL 6141
