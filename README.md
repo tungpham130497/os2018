@@ -10,5 +10,5 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Example Name
-* ID: *YourIdHere*
+* Name: Pham Son Tung
+* ID: USTHBI6-148
